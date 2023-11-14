@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    padding: 0;   
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* ---------------Side panel-------------- */
+header{
+    width: 100%;
+    height: 715px;
+    display: flex;
+}
+.sidepanel{
+    width: 10%;
+    height: 715px;
+    background-color:rgb(14, 65, 82) ;
+    position: fixed;
+
+}
+
+.mainpage{
+    width:70%;
+    margin-left: 11%;
+    height: 715px;
+    display: flex;
+}
+.backgroundimage{
+    height: 715px;
+    width:300px;
+    background-image: url(image/main.PNG);
+    background-size: cover;
+}
+
+
+.content{
+    height: 20px;
+    width: fit-content;
+    margin: 30px;
+    background-color: rgb(14, 65, 82);
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.mainpage h1{
+    display: flex;
+    font-size: 50px;
+    color:#0078d4;
+    padding: 5px;
+    margin: 15px;
+
+}
+.buttons{
+    display: inline-block;
+    margin-left: 20px;
+}
+.buttons button{
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    border-color: palevioletred;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+
+}
+
+
+/* pic */
+.pic{
+    height: 143px;
+    width: 90%;
+    overflow: hidden;
+    margin: 3px;
+    background-size: cover;
+    background-image:url(image/Picture1.png);
+    background-color: rgb(14, 65, 82);
+}
+
+/* menu */
+.menu{
+    height:auto;
+    width: 100%;
+    display: grid;
+    background-color:rgb(14, 65, 82) ;
+}
+
+.options{
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 1rem;
+}
+
+.options:hover{
+    cursor: pointer;
+    color: aqua;
+    background-color: rgb(2, 24, 31);
+
+}
+/* -----------Content-------- */
+
+.cv:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+}
+
+
+/* ----------------------------------------margin---------------------------------- */
+
+.margin1{
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+}
+
+/* -----------------------------------------about------------------------------- */
+
+.about{
+    height: 270px;
+    width:89%;
+    margin-left: 11%;
+}
+
+.about_heading{
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_heading h2{
+    margin-top: 10px;
+    padding: 10px;
+}
+.about_heading h2:hover{
+    background-color: rgb(14, 65, 82);
+    color: white;
+}
+
+
+.about p{
+    width: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(14, 65, 82);
+    color: whitesmoke;
+    line-height: 2.5rem;
+
+}
+
+/* ----------------------------------------------------skills------------------------ */
+
+.skills{
+    width:89%;
+    margin-left: 11%;
+}
+.skills_heading{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.skills_heading h2{
+    padding: 10px;
+}
+.skills_heading h2:hover{
+    background-color: rgb(14, 65, 82);
+    color: white;
+}
+
+.lists{
+    height: 260px;
+    width: 85%;
+    padding: 10px;
+    margin-left: 6%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listnames{
+    width: 22%;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;  
+}
+
+.listnames ul a{
+    display: grid;
+    margin: 30px;
+    font-size: large;
+    font-weight:bold;
+    background-color: transparent;
+    border-color: blue;
+    padding: 5px;
+}
+
+/* ---------------------------------------------------projects---------------------------------------------- */
+
+
+.projects{
+    height: auto;
+    width:89%;
+    margin-left: 11%;
+}
+
+.projects_heading{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.projects_heading h2{
+    padding: 10px;
+}
+.projects_heading h2:hover{
+    background-color: rgb(14, 65, 82);
+    color: white;
+}
+
+.projectname{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.projectname ul{
+    height: auto;
+    padding: 50px;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    margin: 15px;
+}
+
+.projectname ul{
+    list-style: none;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.projectname li label{
+    display: block;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgb(14, 65, 82);
+    color: white;
+    margin-top: 10px;
+}
+.projectname li label:hover{
+    cursor: pointer;
+}
+
+.projectname li a{
+    background-color: rgb(14, 65, 82);
+    color: lightblue; 
+    font-size: small;
+}
+.projectname li a:hover{
+    color: blue;
+}
+
+.projectname .content1{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.content1 p{
+    padding: 20px;
+    background-color: rgb(43, 138, 170);
+  }
+
+input[type="radio"]:checked + label + .content1 {
+    max-height: 300px;
+    display: block;
+  }
+
+/* ----------------------------------------experience---------------------------------- */
+
+.experience{
+    height: auto;
+    width:89%;
+    margin-left: 11%;
+}
+
+.experience_heading{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.experience_heading h2{
+    padding: 10px;
+}
+.experience_heading h2:hover{
+    background-color: rgb(14, 65, 82);
+    color: white;
+}
+
+.mainframe{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.exp{
+    width:25%;
+    height: 350px;
+    background-color: rgb(14, 65, 82);
+    padding: 5px;
+}
+
+.exp h2{
+    padding: 5px;
+}
+.exp h4{
+    padding: 5px;
+    padding-bottom: 10px;
+    font-size: small;
+    font-style: italic;
+}
+.exp p{
+    padding: 5px;
+}
+
+/* ---------------------------------------------contact------------------------------ */
+
+.contact{
+    height: auto;
+    width: 89%;
+    margin-left: 11%;
+}
+
+.contact_heading{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contact_heading h2{
+    padding: 10px;
+}
+.contact_heading h2:hover{
+    background-color: rgb(14, 65, 82);
+    color: white;
+}
+
+.box{
+    height: auto;
+    display: flex;
+}
+
+/* -----------from---------- */
+
+form{
+    height: auto;
+    width: fit-content;
+    background-color: white;
+    margin-left: 30%;
+    margin-bottom: 30px;
+}
+.row{
+    height: auto;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+}
+.row .email{
+    margin-left: 15px;
+}
+.subject{
+    padding: 5px;
+    margin: 10px;
+}
+.message{
+    padding: 5px;
+    margin: 10px;
+}
+
+.contacts{
+    height: auto;
+    width: fit-content;
+    margin-left: 30%;
+}
+
+.sendbutton{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sendbutton button{
+    padding: 3px;
+    width: 50px;
+    background-color: orange;
+    border: none;
+    width: 80px;
+}
+
+
+/* ---------------------------------------------------------footer----------------------------- */
+
+footer{
+    height: 80px;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.social{
+    display: grid;
+    text-align: center;
+}
+.emailme{
+    display: grid;
+    text-align: center;
+}
+.contactme{
+    display: grid;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
